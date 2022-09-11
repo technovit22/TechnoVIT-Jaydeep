@@ -7,7 +7,7 @@ const eventVariant = {
     },
     visible: {
         opacity: 1,
-        scale: 1,
+        scale: 0.8,
         transition: {
             type: "spring",
             delay: 0.3,

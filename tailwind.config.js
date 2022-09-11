@@ -11,10 +11,12 @@ module.exports = {
       },
       backgroundImage: {
         'spaceBg': "url('../public/space-bg.gif')",
+        'gateBg': "url('../public/vitgate.png')",
       },
       fontFamily: {
         'spaceMono': ['Space Grotesk', 'sans-serif'],
         'poppins': ['Poppins', 'sans-serif'],
+        'nanum': ['Nanum Gothic', 'sans-serif'],
       },
       colors: {
         'neonBlue': '#70d6ff',

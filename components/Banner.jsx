@@ -65,6 +65,9 @@ const listVariant = {
   visible: {
     x: 0,
     opacity: 1,
+  },
+  hover: {
+    scale: 1.2,
   }
 }
 
@@ -81,7 +84,7 @@ const navbarVariant = {
       when: "beforeChildren",
       staggerChildren: 2
     }
-  }
+  },
 }
 
 
@@ -122,9 +125,9 @@ const Banner = () => {
       <motion.div className="flex" variants={iconsVariant} initial={"hidden"} animate={"visible"}>
         <div className="w-[50vw] "></div>
         <motion.div variants={listVariant} className="flex space-x-10 justify-end w-[50vw] p-6">
-          <div><BsInstagram className="text-white text-3xl" /></div>
-          <div><BsLinkedin className="text-white text-3xl" /></div>
-          <div><BsFacebook className="text-white text-3xl" /></div>
+          <motion.div variants={listVariant} whileHover={"hover"}><BsInstagram className="text-white text-3xl" /></motion.div>
+          <motion.div variants={listVariant} whileHover={"hover"}><BsLinkedin className="text-white text-3xl" /></motion.div>
+          <motion.div variants={listVariant} whileHover={"hover"}><BsFacebook className="text-white text-3xl" /></motion.div>
         </motion.div>
       </motion.div>
       {/*  */}

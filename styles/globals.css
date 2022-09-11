@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Space+Grotesk&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap");
 
 @tailwind base;
 @tailwind components;
@@ -28,5 +29,16 @@ body::-webkit-scrollbar-thumb {
 
 .theme {
   height: 30rem;
-  background-color: #2D1D61;
+  background-color: #2d1d61;
+}
+
+.theme1 {
+  height: 37rem;
+  background: rgb(77, 44, 123);
+  background: rgb(77, 44, 123);
+  background: linear-gradient(
+    0deg,
+    rgba(77, 44, 123, 1) 0%,
+    rgba(77, 44, 123, 1) 100%
+  );
 }

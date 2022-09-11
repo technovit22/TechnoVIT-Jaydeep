@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import Image from 'next/image'
+import About from '../components/About'
 import Banner from '../components/Banner'
 import Dailyevents from '../components/Dailyevents'
 import Theme from '../components/Theme'
@@ -16,6 +17,7 @@ export default function Home() {
 
       <Banner />
       <Theme />
+      <About />
       <Dailyevents />
     </div>
   )
