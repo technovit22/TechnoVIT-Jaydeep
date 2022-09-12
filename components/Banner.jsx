@@ -101,7 +101,7 @@ const Banner = () => {
             <Link href={`/#home`}><motion.li className="hover:text-neonBlue cursor-pointer">Home</motion.li></Link>
             <Link href={`/#about`}><motion.li className="hover:text-neonBlue cursor-pointer">About</motion.li></Link>
             <Link href={`/#events`}><motion.li className="hover:text-neonBlue cursor-pointer">Events</motion.li></Link>
-            <motion.li className="hover:text-neonBlue cursor-pointer">Sponsers</motion.li>
+            <Link href={`/sponsers`}><motion.li className="hover:text-neonBlue cursor-pointer">Sponsers</motion.li></Link>
             <motion.li className="hover:text-neonBlue cursor-pointer">Contact US</motion.li>
           </motion.ul>
         </motion.div>
