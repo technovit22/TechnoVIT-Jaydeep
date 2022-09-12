@@ -12,7 +12,7 @@ module.exports = {
       backgroundImage: {
         'spaceBg': "url('../public/space-bg.gif')",
         'gateBg': "url('../public/vitgate.png')",
-        'natureBg': "url('../public/natureBg.jpg')",
+        'natureBg': "url('../public/natureBg.png')",
         'natureBg1': "url('../public/natureBg1.gif')",
         'natureBg2': "url('../public/natureBg2.gif')",
         'natureBg3': "url('../public/natureBg3.gif')",
