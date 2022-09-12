@@ -3,6 +3,7 @@ import About from '../components/About'
 import Banner from '../components/Banner'
 import Conveners from '../components/Conveners'
 import Dailyevents from '../components/Dailyevents'
+import Footer from '../components/Footer'
 import Schoolevent from '../components/Schoolevent'
 import Theme from '../components/Theme'
 
@@ -32,6 +33,9 @@ export default function Home() {
       </div>
       <div id="conveners">
         <Conveners />
+      </div>
+      <div id="footer">
+        <Footer />
       </div>
     </div>
   )

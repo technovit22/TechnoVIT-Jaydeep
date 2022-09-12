@@ -12,6 +12,10 @@ module.exports = {
       backgroundImage: {
         'spaceBg': "url('../public/space-bg.gif')",
         'gateBg': "url('../public/vitgate.png')",
+        'natureBg': "url('../public/natureBg.jpg')",
+        'natureBg1': "url('../public/natureBg1.gif')",
+        'natureBg2': "url('../public/natureBg2.gif')",
+        'natureBg3': "url('../public/natureBg3.gif')",
       },
       fontFamily: {
         'spaceMono': ['Space Grotesk', 'sans-serif'],
@@ -20,7 +24,7 @@ module.exports = {
       },
       colors: {
         'neonBlue': '#70d6ff',
-      }
+      },
     },
   },
   plugins: [],

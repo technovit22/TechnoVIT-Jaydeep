@@ -40,13 +40,13 @@ const cardVariant = {
 
 const Schoolevent = () => {
     return (
-        <div className="theme4">
+        <div className="theme5">
             <motion.h1 variants={headVariant} initial={"hidden"} whileInView={"visible"} className="text-center font-bold text-white text-6xl font-poppins pt-10 pb-3">School Fests
             </motion.h1>
             <motion.div variants={cardBoxVariant} initial={"hidden"} whileInView={"visible"} className="flex justify-center items-center flex-wrap rounded">
             {schoolData.map((items, i) => {
                 return (
-                    <motion.div variants={cardVariant} key={i} className="flex flex-col space-y-7 justify-start items-center bg-blue-300 h-[15rem] w-[20rem] m-10 p-10 rounded">
+                    <motion.div variants={cardVariant} key={i} className="flex flex-col space-y-7 justify-start items-center shadow-xl bg-[#9EC996] h-[15rem] w-[20rem] m-10 p-10 rounded">
                         <img src={items.image} className="h-32 w-40" alt="" />
                         <p className="font-bold text-xl text-center font-spaceMono text-white">{items.name}</p>
                     </motion.div>
