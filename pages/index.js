@@ -4,7 +4,6 @@ import About from '../components/About'
 import Banner from '../components/Banner'
 import Dailyevents from '../components/Dailyevents'
 import Theme from '../components/Theme'
-import styles from '../styles/Home.module.css'
 
 export default function Home() {
   return (
@@ -15,10 +14,18 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <Banner />
-      <Theme />
-      <About />
-      <Dailyevents />
+      <div id="home">
+        <Banner />
+      </div>
+      <div>
+        <Theme />
+      </div>
+      <div id="about">
+        <About />
+      </div>
+      <div id="events">
+        <Dailyevents />
+      </div>
     </div>
   )
 }

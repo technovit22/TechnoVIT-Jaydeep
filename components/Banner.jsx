@@ -1,6 +1,6 @@
 import { motion } from "framer-motion"
 import { BsFacebook, BsInstagram, BsLinkedin } from 'react-icons/bs'
-import Theme from "./Theme"
+import Link from "next/link"
 
 const outerVariant = {
   hidden: {
@@ -92,46 +92,46 @@ const navbarVariant = {
 const Banner = () => {
   return (
     <>
-    <motion.div variants={outerVariant} initial={"hidden"} visible={"visible"} className="bg-spaceBg -z-40 bg-cover bg-no-repeat font-spaceMono w-full h-[100vh] space-y-[3.4rem]">
+      <motion.div variants={outerVariant} initial={"hidden"} visible={"visible"} className="bg-spaceBg -z-40 bg-cover bg-no-repeat font-spaceMono w-full h-[100vh] space-y-[3.4rem]">
 
-      {/*  */}
-      <motion.div className="flex items-center w-screen md:px-24 md:py-10 py-6 px-8 justify-between">
-        <motion.img variants={navbarVariant} initial={"hidden"} animate={"visible"} src={`/vitLogo2.svg`} className="h-18 w-[13rem]" alt="" />
-        <motion.ul variants={navbarVariant} initial={"hidden"} animate={"visible"} className="hidden md:flex space-x-8 items-center text-white text-xl font-space-grotesk font-bold">
-          <motion.li className="hover:text-neonBlue">Home</motion.li>
-          <motion.li className="hover:text-neonBlue">About</motion.li>
-          <motion.li className="hover:text-neonBlue">Events</motion.li>
-          <motion.li className="hover:text-neonBlue">Sponsers</motion.li>
-          <motion.li className="hover:text-neonBlue">Contact US</motion.li>
-        </motion.ul>
-      </motion.div>
-      {/*  */}
-
-      {/*  */}
-      <motion.div variants={bannerVariant} initial={"hidden"} animate={"visible1"} className="block h-[15rem] m-auto w-[45rem]">
-        <motion.div className="m-auto w-[43rem] h-[15rem]">
-          <motion.img src={`/tvlogoMain.png`} whileHover={{ scale: 1.1, transition: { duration: 0.2 } }} className='h-full w-full' alt="" />
+        {/*  */}
+        <motion.div className="flex items-center w-screen md:px-24 md:py-10 py-6 px-8 justify-between">
+          <motion.img variants={navbarVariant} initial={"hidden"} animate={"visible"} src={`/vitLogo2.svg`} className="h-18 w-[13rem]" alt="" />
+          <motion.ul variants={navbarVariant} initial={"hidden"} animate={"visible"} className="hidden md:flex space-x-8 items-center text-white text-xl font-space-grotesk font-bold">
+            <Link href={`/#home`}><motion.li className="hover:text-neonBlue cursor-pointer">Home</motion.li></Link>
+            <Link href={`/#about`}><motion.li className="hover:text-neonBlue cursor-pointer">About</motion.li></Link>
+            <Link href={`/#events`}><motion.li className="hover:text-neonBlue cursor-pointer">Events</motion.li></Link>
+            <motion.li className="hover:text-neonBlue cursor-pointer">Sponsers</motion.li>
+            <motion.li className="hover:text-neonBlue cursor-pointer">Contact US</motion.li>
+          </motion.ul>
         </motion.div>
-      </motion.div>
-      {/*  */}
+        {/*  */}
 
-      {/*  */}
-      <motion.div variants={bannerVariant} initial={"hidden"} animate={"visible2"} className="font-spaceMono text-center text-white font-bold text-3xl">
-        <p>September 23 to September 25</p>
-      </motion.div>
-      {/*  */}
-
-      {/*  */}
-      <motion.div className="flex" variants={iconsVariant} initial={"hidden"} animate={"visible"}>
-        <div className="w-[50vw] "></div>
-        <motion.div variants={listVariant} className="flex space-x-10 justify-end w-[50vw] p-6">
-          <motion.div variants={listVariant} whileHover={"hover"}><BsInstagram className="text-white text-3xl" /></motion.div>
-          <motion.div variants={listVariant} whileHover={"hover"}><BsLinkedin className="text-white text-3xl" /></motion.div>
-          <motion.div variants={listVariant} whileHover={"hover"}><BsFacebook className="text-white text-3xl" /></motion.div>
+        {/*  */}
+        <motion.div variants={bannerVariant} initial={"hidden"} animate={"visible1"} className="block h-[15rem] m-auto w-[45rem]">
+          <motion.div className="m-auto w-[43rem] h-[15rem]">
+            <motion.img src={`/tvlogoMain.png`} whileHover={{ scale: 1.1, transition: { duration: 0.2 } }} className='h-full w-full' alt="" />
+          </motion.div>
         </motion.div>
+        {/*  */}
+
+        {/*  */}
+        <motion.div variants={bannerVariant} initial={"hidden"} animate={"visible2"} className="font-spaceMono text-center text-white font-bold text-3xl">
+          <p>September 23 to September 25</p>
+        </motion.div>
+        {/*  */}
+
+        {/*  */}
+        <motion.div className="flex" variants={iconsVariant} initial={"hidden"} animate={"visible"}>
+          <div className="w-[50vw] "></div>
+          <motion.div variants={listVariant} className="flex space-x-10 justify-end w-[50vw] p-6">
+            <motion.div variants={listVariant} whileHover={"hover"}><BsInstagram className="text-white text-3xl" /></motion.div>
+            <motion.div variants={listVariant} whileHover={"hover"}><BsLinkedin className="text-white text-3xl" /></motion.div>
+            <motion.div variants={listVariant} whileHover={"hover"}><BsFacebook className="text-white text-3xl" /></motion.div>
+          </motion.div>
+        </motion.div>
+        {/*  */}
       </motion.div>
-      {/*  */}
-    </motion.div>
     </>
   )
 }
