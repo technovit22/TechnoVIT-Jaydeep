@@ -50,3 +50,13 @@ body::-webkit-scrollbar-thumb {
     rgba(77, 44, 123, 1) 100%
   );
 }
+.theme4 {
+  height: 100%;
+  background: rgb(77, 44, 123);
+  background: rgb(77, 44, 123);
+  background: linear-gradient(
+    0deg,
+    rgba(77, 44, 123, 1) 0%,
+    rgba(77, 44, 123, 1) 100%
+  );
+}

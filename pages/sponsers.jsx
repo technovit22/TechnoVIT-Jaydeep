@@ -1,4 +1,4 @@
-import sponserData from "../styles/sponser"
+import sponserData from "../data/sponser"
 import { motion } from "framer-motion"
 import Link from "next/link"
 

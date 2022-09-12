@@ -1,8 +1,9 @@
 import Head from 'next/head'
-import Image from 'next/image'
 import About from '../components/About'
 import Banner from '../components/Banner'
+import Conveners from '../components/Conveners'
 import Dailyevents from '../components/Dailyevents'
+import Schoolevent from '../components/Schoolevent'
 import Theme from '../components/Theme'
 
 export default function Home() {
@@ -25,6 +26,12 @@ export default function Home() {
       </div>
       <div id="events">
         <Dailyevents />
+      </div>
+      <div id="schools">
+        <Schoolevent />
+      </div>
+      <div id="conveners">
+        <Conveners />
       </div>
     </div>
   )
