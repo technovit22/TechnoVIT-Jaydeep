@@ -45,6 +45,7 @@ const contentVariant = {
         x: 0,
         transition: {
             delay: 0.1,
+            type: "tween",
             when: 'beforeChildren',
             staggerChildren: 0.4,
         }
@@ -59,9 +60,6 @@ const listVariant = {
     visible: {
         x: 0,
         opacity: 1,
-        transition: {
-            damping: '30'
-        }
     }
 
 }
