@@ -31,6 +31,10 @@ body::-webkit-scrollbar-thumb {
   height: 30rem;
   background-color: #2d1d61;
 }
+.theme3 {
+  height: 40rem;
+  background-color: #2d1d61;
+}
 
 .theme1 {
   height: 37rem;
