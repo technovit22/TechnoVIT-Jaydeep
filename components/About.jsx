@@ -39,13 +39,12 @@ const gateVariant = {
 
 const contentVariant = {
     hidden: {
-        x: '-100vw',
+        scale: 0,
     },
     visible: {
-        x: 0,
+        scale: 1,
         transition: {
             delay: 0.1,
-            type: "tween",
             when: 'beforeChildren',
             staggerChildren: 0.4,
         }
@@ -77,7 +76,7 @@ const About = () => {
 
 
                         <motion.div variants={contentVariant} initial={"hidden"}
-                        animate={"visible"} className="flex flex-col space-y-6">
+                        whileInView={"visible"} className="flex flex-col space-y-6">
                             <motion.h1 variants={listVariant} className="font-bold text-white text-6xl font-poppins pt-10 pb-3">About TechnoVIT
                             </motion.h1>
                             <motion.div variants={listVariant} className="w-[50vw] font-nanum text-white font-semibold tracking-wide text-xl">
