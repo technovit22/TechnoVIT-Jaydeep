@@ -1,5 +1,21 @@
 import { motion } from "framer-motion";
-import Router from "next/router";
+import { useRouter } from "next/router";
+
+const router = useRouter();
+    const { id } = router.query;
+    const data = id == "bandvit" ? bandvit :
+        id == "connectivitieee" ? connectivitieee :
+            id == "diseno" ? diseno :
+                id == "glitz" ? glitz :
+                    id == "qubit" ? qubit :
+                        id == "srishti" ? srishti :
+                            id == "taikuun" ? taikuun :
+                                id == "lilacs" ? vitlilacs :
+                                    id == "vitness" ? vitness :
+                                        id == "vsplash" ? vsplash : [];
+
+    const slug = ["bandvit", "connectivitieee", "diseno", "glitz", "qubit", "srishti", "taikuun", "lilacs", "vitness", "vsplash"];
+
 
 
 const School = () => {
