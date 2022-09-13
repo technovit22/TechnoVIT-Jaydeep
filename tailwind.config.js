@@ -10,12 +10,12 @@ module.exports = {
         'space': '#38226A',
       },
       backgroundImage: {
-        'spaceBg': "url('../space-bg.gif')",
-        'gateBg': "url('../vitgate.png')",
-        'natureBg': "url('../natureBg.png')",
-        'natureBg1': "url('../natureBg1.gif')",
-        'natureBg2': "url('../natureBg2.gif')",
-        'natureBg3': "url('../natureBg3.gif')",
+        'spaceBg': "url('/space-bg.gif')",
+        'gateBg': "url('/vitgate.png')",
+        'natureBg': "url('/natureBg.png')",
+        'natureBg1': "url('/natureBg1.gif')",
+        'natureBg2': "url('/natureBg2.gif')",
+        'natureBg3': "url('/natureBg3.gif')",
       },
       fontFamily: {
         'spaceMono': ['Space Grotesk', 'sans-serif'],
