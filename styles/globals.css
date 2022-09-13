@@ -23,12 +23,12 @@ body::-webkit-scrollbar {
 }
 
 body::-webkit-scrollbar-track {
-  background-color: #70d6ff70;
+  background-color: #76d4a8db;
 }
 
 body::-webkit-scrollbar-thumb {
   border-radius: 0.5rem;
-  background-color: #04abff;
+  background-color: #35974c;
 }
 
 .theme {
