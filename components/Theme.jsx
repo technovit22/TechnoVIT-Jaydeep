@@ -17,7 +17,7 @@ const themeVariant = {
 
 const Theme = () => {
     return (
-        <div className="theme">
+        <div className="h-[40rem] bg-black">
             <AnimatePresence>
                 <motion.div variants={themeVariant} whileInView={"visible"} initial={"hidden"} className="h-screen w-screen font-poppins text-6xl text-center p-[7rem]">
                     <motion.h1 className="font-bold text-white">Our theme</motion.h1>

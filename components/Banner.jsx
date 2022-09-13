@@ -92,7 +92,7 @@ const navbarVariant = {
 const Banner = () => {
   return (
     <>
-      <motion.div variants={outerVariant} initial={"hidden"} visible={"visible"} className="bg-natureBg -z-40 bg-cover bg-no-repeat font-spaceMono w-full h-[100vh] space-y-[3.4rem]">
+      <motion.div variants={outerVariant} initial={"hidden"} visible={"visible"} className="bg-spaceBg -z-40 bg-cover bg-no-repeat font-spaceMono w-full h-[100vh] space-y-[3.4rem]">
 
         {/*  */}
         <motion.div className="flex items-center w-screen md:px-24 md:py-10 py-6 px-8 justify-between">
@@ -102,7 +102,7 @@ const Banner = () => {
             <Link href={`/#about`}><motion.li className="hover:text-neonBlue cursor-pointer">About</motion.li></Link>
             <Link href={`/#events`}><motion.li className="hover:text-neonBlue cursor-pointer">Events</motion.li></Link>
             <Link href={`/sponsers`}><motion.li className="hover:text-neonBlue cursor-pointer">Sponsers</motion.li></Link>
-            <motion.li className="hover:text-neonBlue cursor-pointer">Contact US</motion.li>
+            <motion.li className="hover:text-neonBlue cursor-pointer bg-[#9EC996] p-3 rounded">Register</motion.li>
           </motion.ul>
         </motion.div>
         {/*  */}

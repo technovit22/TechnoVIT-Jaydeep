@@ -54,7 +54,7 @@ const arrowVariant = {
 
 const sponsers = () => {
     return (
-        <div className="bg-spaceBg h-[200vh] w-[100vw] bg-no-repeat bg-cover -z-30">
+        <div className="bg-[#9EC996] h-[200vh] w-[100vw] bg-no-repeat bg-cover -z-30">
             <div className="flex p-10 font-poppins">
                 <Link href={`/`}><motion.div variants={arrowVariant} initial={"hidden"} animate={"visible"} className="w-[10rem] rounded h-[3rem] z-10 flex space-x-3 text-2xl items-center justify-center text-white font-semibold font-spaceMono cursor-pointer">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6 mt-1">
@@ -69,7 +69,7 @@ const sponsers = () => {
             <motion.div variants={cardBoxVariant} initial={"hidden"} animate={"visible"} className="flex justify-center items-center flex-wrap rounded">
                 {sponserData.map((items, i) => {
                     return (
-                        <motion.div variants={cardVariant} key={i} className="flex flex-col space-y-7 justify-start items-center bg-blue-300 h-[15rem] w-[20rem] m-10 p-10 rounded">
+                        <motion.div variants={cardVariant} key={i} className="flex flex-col space-y-7 justify-start items-center shadow-xl bg-[#86a5806b] h-[15rem] w-[20rem] m-10 p-10 rounded">
                             <img src={items.image} className="h-32 w-40" alt="" />
                             <p className="font-bold text-xl text-center font-spaceMono text-white">{items.name}</p>
                         </motion.div>
